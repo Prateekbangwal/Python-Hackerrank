@@ -1,0 +1,13 @@
+n = int(input())
+s = set(int(i) for i in input().split())
+m = int(input())
+t = set(int(i) for i in input().split())
+#print(s)
+#print(t)
+x=s.symmetric_difference(t)
+#print(x)
+l=list(x)
+#print(l)
+l.sort()
+for el in l:
+    print (el)
